@@ -1,0 +1,7 @@
+{
+    "uid": "nursery-notifier",
+    "script": "index.js",
+    "sourceDir": "/Users/TechTeam/Projects/nursery-notifier/build",
+    "logFile": "/Users/TechTeam/Projects/nursery-notifier/build/logs.txt",
+    "errFile": "/Users/TechTeam/Projects/nursery-notifier/build/errors.txt"
+}

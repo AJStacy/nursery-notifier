@@ -1,12 +1,15 @@
+import { LocalStorage } from 'node-localstorage';
+
 class NurseryNotification {
-  private currentCode: string | null = null;
+  private localStorage = new LocalStorage('/Users/TechTeam/Projects/nursery-notifier/scratch');
 
   public get code(): string | null {
-    return this.currentCode;
+    const code = this.localStorage.getItem('code');
+    return code === '' ? null : code;
   }
 
-  public set code(code) {
-    this.currentCode = code;
+  public set code(code: string | null) {
+    this.localStorage.setItem('code', code ?? '');
   }
 }
 
